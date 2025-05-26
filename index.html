@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bài Tập Mảng - JavaScript</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Bài Tập JavaScript - Mảng</h1>
+
+    <div class="input-section">
+      <input type="number" id="numberInput" placeholder="Nhập số nguyên">
+      <button onclick="addNumber()"> Thêm số</button>
+    </div>
+
+    <div class="array-display">
+      <strong>Mảng hiện tại:</strong>
+      <span id="arrayDisplay">[]</span>
+    </div>
+
+    <hr>
+
+    <div class="function-group">
+      <button onclick="sumPositive()">1. Tổng số dương</button>
+      <button onclick="countPositive()">2. Đếm số dương</button>
+      <button onclick="findMin()">3. Số nhỏ nhất</button>
+      <button onclick="findMinPositive()">4. Số dương nhỏ nhất</button>
+      <button onclick="findLastEven()">5. Số chẵn cuối</button>
+    </div>
+
+    <div class="function-group">
+      <input type="number" id="pos1" placeholder="Vị trí 1">
+      <input type="number" id="pos2" placeholder="Vị trí 2">
+      <button onclick="swapPositions()">6. Đổi chỗ</button>
+    </div>
+
+    <div class="function-group">
+      <button onclick="sortArray()">7. Sắp xếp tăng dần</button>
+      <button onclick="findFirstPrime()">8. Nguyên tố đầu tiên</button>
+    </div>
+
+    <div class="function-group">
+      <input type="text" id="floatArrayInput" placeholder="Nhập mảng thực (vd: 1.2, 2, 5)">
+      <button onclick="countIntegersInFloatArray()">9. Đếm số nguyên</button>
+    </div>
+
+    <div class="function-group">
+      <button onclick="comparePosNeg()">10. So sánh dương / âm</button>
+    </div>
+
+    <div id="result"></div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
